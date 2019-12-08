@@ -8,6 +8,8 @@ const Field = props => (
     <input 
         type={props.type} 
         name={props.name}
+        onChange={props.onChange}
+        value={props.value}
         > 
     
     </input>
@@ -18,7 +20,9 @@ Field.defaultProps = {
     label: 'Field',
     name: 'Field',
     type: 'text',
-    className: 'DefaultFieldClass'
+    value: '',
+    className: 'DefaultFieldClass',
+    onChange: null
 }
 
 export default Field;
