@@ -7,6 +7,7 @@ const Button = props => (
     <button 
         onClick= {props.onClick}
         className={props.className}
+        data-testid="button"
         > 
     {props.label}
     </button>

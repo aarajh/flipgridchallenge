@@ -32,7 +32,7 @@ class Signup extends React.Component{
         return(
             <div className="Signup">
                 
-            <h1>Signup</h1>
+            <h1>Sign Up</h1>
             <p>Help text</p>
             <Field 
                 value={this.state.firstName} 

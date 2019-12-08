@@ -4,7 +4,7 @@ import './Field.css'
 
 const Field = props => (
     <div className={props.className}>
-        <text>{props.label}</text>
+        {props.label}
     <input 
         type={props.type} 
         name={props.name}
