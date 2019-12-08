@@ -6,4 +6,7 @@
   justify-content: center;
   background-color: #f7f7f7;
   font-weight: 500;
+  flex: 1 1 0;
+  font-size: calc(8px+ .4vh + .6vw);
 }
+

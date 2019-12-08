@@ -24,7 +24,7 @@ class Signup extends React.Component{
         })
     }
 
-    handleSubmit = e =>{
+    handleSubmit = () =>{
         console.log("Sign up pressed with values", this.state)
     }
     render(){

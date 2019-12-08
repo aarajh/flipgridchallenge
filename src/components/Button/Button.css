@@ -1,7 +1,22 @@
 .DefaultButtonClass{
+    all: unset;
     display: flex;
     justify-self: flex-end;
-    padding:2%;
+    margin: 5% 0%;
+    padding:3% 5%;
+    color: white;
+    border-radius: 0.6em;
+    cursor: pointer;
+    background: linear-gradient(145deg,#f55302,#df0d17,#df0d6f);
+    transition: filter 0.2s linear;
+}
+
+.DefaultButtonClass:hover{
+    filter: opacity(70%)
+}
+
+.DefaultButtonClass:active{
+    filter: opacity(50%)
 }
 
 .defaultMainButtonClass{

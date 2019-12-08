@@ -4,12 +4,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 2%;
-    width: 25vw;
-    height: 40vh;
+    padding: 2em;
+    margin: 1em;
+    padding-bottom: 0;
+    max-width: 30em;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     text-align: start;
+    box-sizing: border-box;
 }
 
 .title{
@@ -21,7 +23,6 @@
 
 h1{
     margin: 0;
-    line-height: 98%;
     font-size: 2.4em;
 }
 
