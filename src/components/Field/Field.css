@@ -6,7 +6,6 @@
 }
 
 .DefaultInnerClass{
-    width: 90%;
     line-height: 1.5em;
     font-size: inherit;
     border-radius: 5px;
@@ -20,6 +19,15 @@
 }
 
 .DefaultLabelClass{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     font-weight: 600;
     padding: 5px 0px 5px 0px;
+}
+
+.ErrorField{
+    color: #df0d6f;
+    align-self: center;
+    font-size: 0.5em;
 }
