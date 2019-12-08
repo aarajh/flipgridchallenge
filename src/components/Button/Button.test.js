@@ -16,6 +16,7 @@ test('renders custom button', () => {
     expect(getByTestId("button")).toHaveTextContent("Sign up");
 });
 
+//Test mocks clicking the button to check if the onClick ftn is called.
 test('onClick passed works',()=>{
   const onClick = jest.fn();
   const {getByTestId}=render(<Button onClick={onClick}/>);

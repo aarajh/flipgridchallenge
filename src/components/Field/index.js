@@ -3,9 +3,10 @@ import './Field.css'
 
 
 const Field = props => (
-    <div className={props.className}>
+    <div className={props.className} data-testid="field">
         {props.label}
     <input 
+        data-testid="inputfield"
         type={props.type} 
         name={props.name}
         onChange={props.onChange}
@@ -22,7 +23,7 @@ Field.defaultProps = {
     type: 'text',
     value: '',
     className: 'DefaultFieldClass',
-    onChange: null
+    onChange: () => {},
 }
 
 export default Field;
