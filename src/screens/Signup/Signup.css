@@ -1,0 +1,15 @@
+.Signup{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 0.1vh solid black;
+    padding: 2%;
+    width: 40vw;
+    height: 40vh;
+    
+}
+
+.title{
+}
