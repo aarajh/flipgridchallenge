@@ -1,6 +1,6 @@
 import React from 'react';
 import './Field.css'
-
+import "typeface-roboto";
 
 const Field = props => (
     <div className={props.className} data-testid="field">

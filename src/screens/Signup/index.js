@@ -31,9 +31,12 @@ class Signup extends React.Component{
 
         return(
             <div className="Signup">
-                
-            <h1>Sign Up</h1>
-            <p>Help text</p>
+            <header className="title">
+                <h1 style={{fontWeight: 'normal'}}>Let's</h1>
+                <h1>Sign up</h1>
+            </header>
+            <p className="helperText">Use the form below to sign up for this super awesome 
+                service. You're only a few steps away!</p>
             <Field 
                 value={this.state.firstName} 
                 label="First Name"
