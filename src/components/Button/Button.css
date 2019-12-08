@@ -1,0 +1,12 @@
+.DefaultButtonClass{
+    display: flex;
+    justify-self: flex-end;
+    padding:2%;
+}
+
+.defaultMainButtonClass{
+    display: flex;
+    min-width: 100%;
+    justify-content: flex-end;
+
+}

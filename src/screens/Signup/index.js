@@ -1,7 +1,9 @@
 import React from 'react';
 import './Signup.css';
 import Field from 'components/Field/'
+import Button from 'components/Button/'
 
+//Displays the signup form with header and text.
 class Signup extends React.Component{
     constructor(props){
         super(props);
@@ -12,14 +14,18 @@ class Signup extends React.Component{
         }
     }
 
-    inputHandler = (event)=>{
-        var e=event;
+    //Updates the state with whatever change is made
+    // to the input field.
+    inputHandler = (e)=>{
         const fieldName = e.target.name;
         const val = e.target.value;
-        console.log(event.target)
         this.setState({
             [fieldName]: val
         })
+    }
+
+    handleSubmit = e =>{
+        console.log("Sign up pressed with values", this.state)
     }
     render(){
 
@@ -48,7 +54,11 @@ class Signup extends React.Component{
                 type="password"
                 onChange={this.inputHandler}
                 />
-            <button>Sign up!</button>
+            
+            <Button
+                onClick={this.handleSubmit}
+                label="Sign up!"
+                />
             </div>
         )
     }
