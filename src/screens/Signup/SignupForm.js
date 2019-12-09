@@ -60,7 +60,7 @@ class Signup extends React.Component{
         event.preventDefault();
         if(this.formValidation()){
             console.log("Signed up with", this.state);
-            this.props.toggleCompletion();
+            this.props.dispatchFormData(this.state.formData);
         }
     }
     render(){

@@ -7,22 +7,21 @@ class SignupRouting extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            signupFormComplete: false
+            formData:null
         }
     }
 
-    toggleCompletion=()=>{
-        let isComplete=this.state.signupFormComplete;
-        this.setState({signupFormComplete: !isComplete})
+    dispatchFormData=(formData)=>{
+        this.setState({formData})
     }
 
     render(){
-        if(!this.state.signupFormComplete)
+        if(!this.state.formData)
         return(
-            <SignupForm toggleCompletion={this.toggleCompletion}/>
+            <SignupForm dispatchFormData={this.dispatchFormData}/>
         )
         return(
-            <SignupConfirmation/>
+            <SignupConfirmation formData={this.state.formData}/>
         )
     }
 }

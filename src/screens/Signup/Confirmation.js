@@ -1,12 +1,34 @@
 import React from 'react';
 import './Signup.css';
 
+import Button from 'components/Button/'
 
 class SignupConfirmation extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
+    handleSignin=()=>{
+        alert("Sign in button pressed.")
+    }
 
     render(){
+        const formData=this.props.formData
         return(
-            <h1>Form Completed</h1>
+            <div className="Signup">
+            <header className="title">
+                <h1 style={{fontWeight: 'normal'}}>Welcome,</h1>
+                <h1>{formData['firstName']}</h1>
+            </header>
+            <p className="helperText">You have been registerd for this awesome service.
+            Please check your email listed below for instructions.</p>
+            
+            <p style={{fontWeight:'bold'}}>{formData['email']}</p>
+            <Button
+                onClick={this.handleSignin}
+                label="Sign In"
+                />
+            </div>
         )
     }
 }
