@@ -1,5 +1,8 @@
 .DefaultButtonClass{
     all: unset;
+    /* Edge doesnt support 'all' hence the next two props */
+    font: unset;
+    border: unset;
     display: flex;
     justify-self: flex-end;
     margin: 5% 0%;
