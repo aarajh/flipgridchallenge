@@ -23,3 +23,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ### `npm test -- --coverage`
 
 Launches the test runner with test coverage.
+
+### `npm run build`
+
+Creates a production build that supports Edge, IE etc. Run `serve -s build` to run the prod build after `npm run build`
