@@ -3,6 +3,8 @@ import SignupForm from './SignupForm'
 import SignupConfirmation from './Confirmation'
 import './Signup.css';
 
+// Checks if we have formData, if we do, routes to confirmation
+// else to the form
 class SignupRouting extends React.Component{
     constructor(props){
         super(props);
@@ -11,6 +13,7 @@ class SignupRouting extends React.Component{
         }
     }
 
+    // Function to allow form to give this component data.
     dispatchFormData=(formData)=>{
         this.setState({formData})
     }

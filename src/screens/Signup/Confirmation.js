@@ -5,6 +5,7 @@ import Button from 'components/Button/'
 
 class SignupConfirmation extends React.Component{
 
+    //Sample function to signal that signin button is pressed.
     handleSignin=()=>{
         alert("Sign in button pressed.")
     }

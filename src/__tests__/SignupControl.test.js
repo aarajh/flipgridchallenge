@@ -14,10 +14,10 @@ test('renders form by default', () => {
 
 // Tests whole functionality
 // i.e. The user enters valid info and submits, is redirected
-// to Confirmation.
+// to Confirmation where user email and name are shown.
 test('routes to confirmation when formData submitted', () => {
     const ref = React.createRef();
-    const { getByText, getByTestId } = render(<SignupControl ref={ref} />);
+    const { getByTestId } = render(<SignupControl ref={ref} />);
     const formData = { 
         firstName: 'TestUser',
         email: 'test@test.com',

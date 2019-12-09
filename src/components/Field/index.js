@@ -2,6 +2,7 @@ import React from 'react';
 import './Field.css'
 import "typeface-roboto";
 
+//Checks and displays if there are any errors to display.
 const ShowError = error =>(
     <div style={error?{}:{visibility:'hidden'}} className="ErrorField">
         {error}
