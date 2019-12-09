@@ -5,13 +5,27 @@ exports[`matches snapshot 1`] = `
   className="DefaultFieldClass"
   data-testid="field"
 >
-  Field
+  <div
+    className="DefaultLabelClass"
+  >
+    Field
+    <div
+      className="ErrorField"
+      style={
+        Object {
+          "visibility": "hidden",
+        }
+      }
+    />
+  </div>
   <input
+    className="DefaultInnerClass"
     data-testid="inputfield"
     name="Field"
     onChange={[Function]}
+    style={null}
     type="text"
-    value=""
+    value={null}
   />
 </div>
 `;

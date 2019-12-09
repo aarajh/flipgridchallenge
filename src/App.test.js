@@ -4,6 +4,6 @@ import App from './App';
 
 test('Renders Signup Form', () => {
   const { getByText } = render(<App />);
-  const definingElement = getByText("Sign Up");
+  const definingElement = getByText("Sign up");
   expect(definingElement).toBeInTheDocument();
 });
