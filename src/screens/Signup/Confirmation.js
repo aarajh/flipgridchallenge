@@ -4,9 +4,6 @@ import './Signup.css';
 import Button from 'components/Button/'
 
 class SignupConfirmation extends React.Component{
-    constructor(props){
-        super(props);
-    }
 
     handleSignin=()=>{
         alert("Sign in button pressed.")

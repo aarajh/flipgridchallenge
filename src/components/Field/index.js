@@ -32,7 +32,7 @@ Field.defaultProps = {
     label: 'Field',
     name: 'Field',
     type: 'text',
-    value: null,
+    value: '',
     error: null,
     innerClass: 'DefaultInnerClass',
     labelClass: 'DefaultLabelClass',

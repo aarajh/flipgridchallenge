@@ -1,7 +1,7 @@
 import React from 'react';
 import { render,cleanup, fireEvent } from '@testing-library/react';
 import "@testing-library/jest-dom/extend-expect"
-import Field from './';
+import Field from 'components/Field/';
 import renderer from "react-test-renderer"
 
 afterEach(cleanup)
