@@ -7,13 +7,18 @@ import renderer from "react-test-renderer"
 afterEach(cleanup)
 
 test('renders default Field', () => {
-  const { getByTestId } = render(<Field onChange={jest.fn()} />);
+  const { getByTestId } = render(<Field onChange={jest.fn()}/>);
   expect(getByTestId("field")).toHaveTextContent("Field");
 });
 
 test('renders custom label', () => {
     const { getByTestId } = render(<Field onChange={jest.fn()} label="Name" />);
     expect(getByTestId("field")).toHaveTextContent("Name");
+});
+
+test('renders error message', () => {
+  const { getByTestId } = render(<Field onChange={jest.fn()} label="Name" error="Field is required" />);
+  expect(getByTestId("field")).toHaveTextContent("Field is required");
 });
 
 //Test mocks updating the Field to check if the onChange function is called.

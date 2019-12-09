@@ -12,12 +12,12 @@ class SignupConfirmation extends React.Component{
     render(){
         const formData=this.props.formData
         return(
-            <div className="Signup">
+            <div className="Signup" data-testid="confirmation">
             <header className="title">
                 <h1 style={{fontWeight: 'normal'}}>Welcome,</h1>
                 <h1>{formData['firstName']}</h1>
             </header>
-            <p className="helperText">You have been registerd for this awesome service.
+            <p className="helperText">You have been registered for this awesome service.
             Please check your email listed below for instructions.</p>
             
             <p style={{fontWeight:'bold'}}>{formData['email']}</p>

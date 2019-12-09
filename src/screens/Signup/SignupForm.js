@@ -59,25 +59,26 @@ class Signup extends React.Component{
     handleSubmit = (event) =>{
         event.preventDefault();
         if(this.formValidation()){
-            console.log("Signed up with", this.state);
             this.props.dispatchFormData(this.state.formData);
         }
     }
     render(){
         const {formData,valErrors}=this.state
         return(
-            <div className="Signup">
-            <header className="title">
+            <div className="Signup" data-testid="signupForm">
+            <header data-testid="formHeader" className="title">
                 <h1 style={{fontWeight: 'normal'}}>Let's</h1>
                 <h1>Sign up</h1>
             </header>
-            <p className="helperText">Use the form below to sign up for this super awesome 
+            <p className="helperText" data-testid="formHelperText">Use the form below to sign up for this super awesome 
                 service. You're only a few steps away!</p>
-            <form className="SignupForm" onSubmit={this.handleSubmit}>
+            <form className="SignupForm" data-testid="formItself" onSubmit={this.handleSubmit}>
             <Field 
                 value={formData.firstName} 
                 label="First Name"
                 name="firstName"
+                main-testid="firstName"
+                data-testid="firstNameField"
                 error={valErrors['firstName']}
                 onChange={this.inputHandler}
                 />
@@ -85,6 +86,8 @@ class Signup extends React.Component{
                 value={formData.email}
                 label="Email"
                 name="email"
+                main-testid="email"
+                data-testid="emailField"
                 error={valErrors['email']}
                 onChange={this.inputHandler}
                 />
@@ -93,6 +96,8 @@ class Signup extends React.Component{
                 label="Password"
                 name="password"
                 type="password"
+                main-testid="password"
+                data-testid="passwordField"
                 error={valErrors['password']}
                 onChange={this.inputHandler}
                 />

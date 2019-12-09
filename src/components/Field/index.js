@@ -9,13 +9,13 @@ const ShowError = error =>(
 )
 
 const Field = props => (
-    <div className={props.className} data-testid="field">
+    <div className={props.className} data-testid={props["main-testid"]}>
         <div className={props.labelClass}>
         {props.label}
         {ShowError(props.error)}
         </div>
     <input 
-        data-testid="inputfield"
+        data-testid={props["data-testid"]}
         className={props.innerClass}
         style={props.error?{borderColor:"#df0d6f52"}:null}
         type={props.type} 
@@ -33,11 +33,14 @@ Field.defaultProps = {
     name: 'Field',
     type: 'text',
     value: '',
+    "main-testid":"field",
+    "data-testid": "inputfield",
+    defaultValue: '',
     error: null,
     innerClass: 'DefaultInnerClass',
     labelClass: 'DefaultLabelClass',
     className: 'DefaultFieldClass',
-    onChange: () => {},
+    onChange: null,
 }
 
 export default Field;
