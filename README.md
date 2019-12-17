@@ -1,10 +1,11 @@
 ## Flipgrid Code Challenge
-Implementation of a simple signup screen and a confirmation view.
+Implementation of a simple signup screen and a confirmation view. It is a very basic implementation of the sign up page and hence does not utilize React-Router or Redux.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
+## Available Scripts
+Before running, please run `npm install` to install all dependencies.
 In the project directory, you can run:
 
 ### `npm start`
