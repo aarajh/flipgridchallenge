@@ -1,4 +1,4 @@
-## Flipgrid Code Challenge
+## React Sample Screen
 Implementation of a simple signup screen and a confirmation view. It is a very basic implementation of the sign up page and hence does not utilize React-Router or Redux.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
